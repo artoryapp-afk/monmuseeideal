@@ -9,17 +9,17 @@
   @font-face { font-family: 'Fraunces'; src: url('polices/fraunces.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
   @font-face { font-family: 'Inter'; src: url('polices/inter.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
   :root {
-    --paper: #EAE3D2;
-    --ink: #241F17;
-    --muted: #6B6255;
-    --accent: #8C3225;
-    --line: #C9BA9C;
+    --mmi-paper: #EAE3D2;
+    --mmi-ink: #241F17;
+    --mmi-muted: #6B6255;
+    --mmi-accent: #8C3225;
+    --mmi-line: #C9BA9C;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--mmi-paper);
+    color: var(--mmi-ink);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
   }
@@ -48,17 +48,17 @@
     margin: 0 0 6px;
   }
   .updated {
-    color: var(--muted);
+    color: var(--mmi-muted);
     font-size: 0.85rem;
     margin: 0 0 28px;
   }
   .notice {
     background: #F6F0E3;
-    border-left: 3px solid var(--accent);
+    border-left: 3px solid var(--mmi-accent);
     padding: 14px 16px;
     border-radius: 4px;
     font-size: 0.88rem;
-    color: var(--muted);
+    color: var(--mmi-muted);
     margin-bottom: 36px;
   }
   h2 {
@@ -67,7 +67,7 @@
     font-size: 1.15rem;
     margin: 36px 0 12px;
     padding-top: 8px;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--mmi-line);
   }
   h2:first-of-type { border-top: none; padding-top: 0; }
   p { margin: 0 0 14px; }
@@ -82,9 +82,9 @@
   th, td {
     text-align: left;
     padding: 8px 10px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--mmi-line);
   }
-  th { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
+  th { color: var(--mmi-muted); font-weight: 600; font-size: 0.8rem; }
   /* Téléphones : le tableau à trois colonnes doit tenir dans la largeur de l'écran. */
   @media (max-width: 520px) {
     .wrap { padding: 28px 16px 64px; }
@@ -92,26 +92,26 @@
     th, td { padding: 8px 5px; }
     td { hyphens: auto; overflow-wrap: anywhere; }
   }
-  strong { color: var(--ink); }
-  a { color: var(--accent); }
+  strong { color: var(--mmi-ink); }
+  a { color: var(--mmi-accent); }
   .placeholder {
     background: #F6F0E3;
     padding: 1px 5px;
     border-radius: 3px;
-    color: var(--accent);
+    color: var(--mmi-accent);
     font-style: italic;
   }
   hr {
     border: none;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--mmi-line);
     margin: 40px 0;
   }
   footer {
     margin-top: 48px;
     padding-top: 20px;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--mmi-line);
     font-size: 0.82rem;
-    color: var(--muted);
+    color: var(--mmi-muted);
   }
 </style>
 </head>
