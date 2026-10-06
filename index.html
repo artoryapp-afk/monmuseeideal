@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mon Musée Idéal — Conditions d'utilisation et politique de confidentialité</title>
 <style>
-  /* Polices hébergées avec la page (aucun appel à un service tiers) — SIL Open Font License 1.1. */
-  @font-face { font-family: 'Fraunces'; src: url('polices/fraunces.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
-  @font-face { font-family: 'Inter'; src: url('polices/inter.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
-  :root {
-    --mmi-paper: #EAE3D2;
-    --mmi-ink: #241F17;
-    --mmi-muted: #6B6255;
-    --mmi-accent: #8C3225;
-    --mmi-line: #C9BA9C;
+  /* Police Instrument Sans (SIL Open Font License 1.1), graisses 400, 500 et 600. */
+  @font-face { font-family: 'Instrument Sans'; src: url('polices/InstrumentSans-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+  @font-face { font-family: 'Instrument Sans'; src: url('polices/InstrumentSans-Medium.woff2') format('woff2'); font-weight: 500; font-display: swap; }
+  @font-face { font-family: 'Instrument Sans'; src: url('polices/InstrumentSans-SemiBold.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+
+    :root {
+    --mmi-paper: #F5F6F7;
+    --mmi-ink: #121418;
+    --mmi-muted: #6A6F78;
+    --mmi-accent: #1F4D3F;
+    --mmi-line: #DCDFE3;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     background: var(--mmi-paper);
     color: var(--mmi-ink);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     line-height: 1.6;
   }
   .wrap {
@@ -36,12 +38,12 @@
   }
   header svg { width: 40px; height: 40px; flex-shrink: 0; }
   header span {
-    font-family: 'Fraunces', serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
   }
   h1 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.3;
@@ -53,7 +55,7 @@
     margin: 0 0 28px;
   }
   .notice {
-    background: #F6F0E3;
+    background: #E7E9EC;
     border-left: 3px solid var(--mmi-accent);
     padding: 14px 16px;
     border-radius: 4px;
@@ -62,7 +64,7 @@
     margin-bottom: 36px;
   }
   h2 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-weight: 500;
     font-size: 1.15rem;
     margin: 36px 0 12px;
@@ -92,10 +94,11 @@
     th, td { padding: 8px 5px; }
     td { hyphens: auto; overflow-wrap: anywhere; }
   }
+  strong, b { font-weight: 600; }
   strong { color: var(--mmi-ink); }
   a { color: var(--mmi-accent); }
   .placeholder {
-    background: #F6F0E3;
+    background: #E7E9EC;
     padding: 1px 5px;
     border-radius: 3px;
     color: var(--mmi-accent);
@@ -120,8 +123,8 @@
 
   <header>
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <rect x="4" y="4" width="92" height="92" rx="22" fill="#8C3225"/>
-      <g transform="translate(18,18) scale(0.638)" fill="#EAE3D2">
+      <rect x="4.5" y="4.5" width="91" height="91" rx="22" fill="#F5F6F7" stroke="#DCDFE3" stroke-width="1.5"/>
+      <g transform="translate(20,20) scale(0.6)" fill="#121418">
         <path d="m94 2h-88c-2.2109 0-4 1.7891-4 4v88c0 2.2109 1.7891 4 4 4h88c2.2109 0 4-1.7891 4-4v-88c0-2.2109-1.7891-4-4-4zm-84 13.656 12 12v44.688l-12 12zm5.6562 74.344 12-12h44.688l12 12zm14.344-20v-40h40v40zm42.344-48h-44.688l-12-12h68.688z"/>
       </g>
     </svg>
